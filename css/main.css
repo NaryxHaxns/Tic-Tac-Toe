@@ -2,7 +2,6 @@ body {
     background-color: rgba(231, 207, 138, 1);
     font-family: 'Monoton', cursive;
     margin: 0;
-    align-items: center;
 }
 
 h1 {
@@ -26,12 +25,12 @@ h2 {
     grid-template-columns: repeat(3, 15vmin);
     grid-template-rows: repeat(3, 15vmin);
     gap: 1vmin;
+    color: rgba(84, 27, 33, 1);
 }
 
 #nueve div {
     font-weight: lighter;
     border: 5px solid rgba(84, 27, 33, 1);
-    padding: 5px;
-    font-size: 500%;
-    
+    font-size: 400%;
+    text-align: center;
 }
