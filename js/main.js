@@ -8,9 +8,7 @@ let board;
 let turn;
 let winner;
 
-const nueveEls = Array.from(document.querySelectorAll('#nueve > div'));
-
-const tSwapEl = document.getElementById('tSwap');
+const nueveEls = Array.from(document.querySelectorAll('#board > div'));
 
 document.getElementById('nueve').addEventListener('click', clickPlay);
 document.getElementById('doOver').addEventListener('click', reDo);
@@ -31,14 +29,21 @@ function init() {
 }
 
 function render() {
+    board.forEach(function(colArr, colIdx) {
+        colArr.forEach(function(cell, rowIdx) {
+            const div = document.getElementById(`board[${colIdx}][${rowIdx}]`);
+            div.style.backgroundColor = playerLookup[cell];
+        });
+    });
+    const tSwapEl = document.getElementById('tSwap');
     if (winner) {
         if (winner === 'T') {
             tSwapEl.innerHTML = "it's a tie!"
         } else {
-            tSwapEl.innerHTML = `<span style="color: ${playerLookup[turn]}">${playerLookup[turn]}</span> Wins`;
+            tSwapEl.innerHTML = `<span style="color: ${playerLookup[turn]}">${playerLookup[turn].toUpperCase()}</span> Wins`;
         }
     } else {
-        tSwapEl.innerHTML = `<span style="color: ${playerLookup[turn]}">${playerLookup[turn]}'s</span> Turn`;
+        tSwapEl.innerHTML = `<span style="color: ${playerLookup[turn]}">${playerLookup[turn].toUpperCase()}'s</span> Turn`;
     }
 }
 
