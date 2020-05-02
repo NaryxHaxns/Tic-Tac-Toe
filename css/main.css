@@ -1,36 +1,45 @@
 body {
     background-color: rgba(231, 207, 138, 1);
     font-family: 'Monoton', cursive;
-    margin: 0;
+    color: rgba(84, 27, 33, 1);
+    text-align: center;
 }
 
 h1 {
     font-weight: lighter;
-    text-align: center;
-    color: rgba(84, 27, 33, 1);
     font-size: 64px;
 }
 
 h2 {
     font-weight: lighter;
-    text-align: center;
-    font-weight: lighter;
-    color: rgba(84, 27, 33, 1);
     font-size: 44px;
 }
 
 #nueve {
+    display: flex;
     justify-content: center;
     display: grid;
     grid-template-columns: repeat(3, 15vmin);
     grid-template-rows: repeat(3, 15vmin);
     gap: 1vmin;
-    color: rgba(84, 27, 33, 1);
 }
 
 #nueve div {
     font-weight: lighter;
     border: 5px solid rgba(84, 27, 33, 1);
     font-size: 400%;
-    text-align: center;
 }
+
+button {
+    background-color: transparent;
+    border: 2px solid rgba(84, 27, 33, 1);
+    color: rgba(84, 27, 33, 1);
+    font-family: 'Monoton', cursive;
+    font-weight: lighter;
+    font-size: 120%;
+    border-radius: 50%;
+    width: 110px;
+    height: 50px;
+    margin: 50px 0 0 0;
+}
+
