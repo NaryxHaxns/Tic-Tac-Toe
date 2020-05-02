@@ -8,6 +8,8 @@ let board;
 let turn;
 let winner;
 
+const nueveEls = Array.from(document.querySelectorAll('#nueve > div'));
+
 const tSwapEl = document.getElementById('tSwap');
 
 document.getElementById('nueve').addEventListener('click', clickPlay);
@@ -41,9 +43,9 @@ function render() {
 }
 
 function clickPlay(e) {
-    const colIdx = nueve.indexof(event.target);
-    if (colIdx === -1 || winner) return;
+  
     turn *= -1;
+    render();
 }
 
 function moEnt() {
