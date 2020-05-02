@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(231, 207, 138, 1);
+    font-family: 'Monoton', cursive;
+    margin: 0;
+    align-items: center;
+}
+
+h1 {
+    font-weight: lighter;
+    text-align: center;
+    color: rgba(84, 27, 33, 1);
+    font-size: 64px;
+}
+
+h2 {
+    font-weight: lighter;
+    text-align: center;
+    font-weight: lighter;
+    color: rgba(84, 27, 33, 1);
+    font-size: 44px;
+}
+
+#nueve {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 15vmin);
+    grid-template-rows: repeat(3, 15vmin);
+    gap: 1vmin;
+}
+
+#nueve div {
+    font-weight: lighter;
+    border: 5px solid rgba(84, 27, 33, 1);
+    padding: 5px;
+    font-size: 500%;
+    
+}
