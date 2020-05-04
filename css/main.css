@@ -27,6 +27,7 @@ h2 {
 #nueve div {
     font-weight: lighter;
     border: 5px solid rgba(84, 27, 33, 1);
+    padding: 1px;
     font-size: 400%;
 }
 
